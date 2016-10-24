@@ -1,0 +1,18 @@
+creat a new branch named 'dev'
+$ git checkout -b dev
+	=       $git branch dev
+		$git checkout dev
+
+check the branches
+$git branch
+
+
+change the branch back to master
+$git checkout master
+
+
+merge 'dev' to 'master'
+$git merge dev
+
+delete branch 'dev'
+$git branch -d dev
