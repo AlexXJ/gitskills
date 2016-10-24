@@ -16,3 +16,35 @@ $git merge dev
 
 delete branch 'dev'
 $git branch -d dev
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+alex@factory:~/gitskills$ git checkout -b dev
+fatal: A branch named 'dev' already exists.
+alex@factory:~/gitskills$ git branch
+* dev
+  master
+alex@factory:~/gitskills$ git add 4_branches 
+alex@factory:~/gitskills$ git commit -m "learn to make a branch callde dev"
+[dev 13028c2] learn to make a branch callde dev
+ 1 file changed, 18 insertions(+)
+ create mode 100644 4_branches
+alex@factory:~/gitskills$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+alex@factory:~/gitskills$ git merge dev
+Updating bb55fc7..13028c2
+Fast-forward
+ 4_branches | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+ create mode 100644 4_branches
+alex@factory:~/gitskills$ git branch -d dev
+Deleted branch dev (was 13028c2).
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+when there is conflict between branches
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
